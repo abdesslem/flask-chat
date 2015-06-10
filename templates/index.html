@@ -1,0 +1,223 @@
+<html hola_ext_inject="disabled" lang="en"><head>
+<!--
+<script> 
+    function updateMessage() {
+     var request = $.ajax({
+      url: "/mail",
+      type: "GET",                    
+      dataType: "json"
+     });
+     request.done(function(msg) {
+      $("#from").html(msg.from);
+      $("#number").html(msg.number);
+      $("#subject").html(msg.subject);
+     });
+    }
+    setInterval(updateMessage, 5000);
+    window.addEventListener('load', updateMessage);
+</script>
+-->
+
+</script>
+	
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Learny</title>
+		<meta name="generator" content="Bootply">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="static/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="static/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<!-- Header -->
+<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-toggle"></span>
+      </button>
+      <a class="navbar-brand" href="#">Learny</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+            <i class="glyphicon glyphicon-user"></i> Admin <span class="caret"></span></a>
+          <ul id="g-account-menu" class="dropdown-menu" role="menu">
+            <li><a href="#">My Profile</a></li>
+            <li><a href="/logout"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div><!-- /container -->
+</div>
+<!-- /Header -->
+
+<!-- Main -->
+<div class="container">
+  
+  <!-- upper section -->
+  <div class="row">
+	<div class="col-sm-3">
+      <!-- left -->
+      <h3><i class="glyphicon glyphicon-briefcase"></i> Toolbox</h3>
+      <hr>
+      
+      <ul class="nav nav-stacked">
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-flash"></i> Alerts</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-link"></i> Links</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i> Reports</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-book"></i> Books</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-briefcase"></i> Tools</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-time"></i> Real-time</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-plus"></i> Advanced..</a></li>
+      </ul>
+      
+      <hr>
+      
+  	</div><!-- /span-3 -->
+    <div class="col-sm-9">
+      	
+      <!-- column 2 -->	
+       <h3><i class="glyphicon glyphicon-dashboard"></i> Connect with people</h3>  
+            
+       <hr>
+      
+	   <div class="row">
+            <!-- center left-->	
+         	<div class="col-md-7">
+			 
+                <section>
+    		<form class="join-chat">
+        	  <label>Type your email to join the chat</label>
+        	  <input name="email" type="email">
+        	  <input type="submit" value="Join">
+    		</form>
+
+                <ul class="messages" style="display:none;"></ul>
+		
+		<form class="compose-message-form" style="display:none;">
+   		  <textarea name="message" required></textarea>
+   		  <input type="submit" value="send">
+		</form>
+
+		</section>
+     
+          	</div><!--/col-->
+         
+            <!--center-right-->
+        	<div class="col-md-5">
+
+
+
+
+
+
+
+
+<div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <i class="glyphicon glyphicon-wrench pull-right"></i>
+            <h4>Submit Request</h4>
+          </div>
+        </div>              
+              <div class="panel-body">
+          
+          <form class="form form-vertical">
+            <div class="control-group">
+              <label>Name</label>
+              <div class="controls">
+                <input class="form-control" placeholder="Enter Name" type="text">
+              </div>
+            </div>      
+            <div class="control-group">
+              <label>Title</label>
+              <div class="controls">
+                <input class="form-control" placeholder="Password" type="password">
+                
+              </div>
+            </div>   
+            <div class="control-group">
+              <label>Details</label>
+              <div class="controls">
+                <textarea class="form-control"></textarea>
+              </div>
+            </div> 
+            <div class="control-group">
+              <label>Select</label>
+              <div class="controls">
+                <select class="form-control"><option>General Question</option><option>Server Issues</option><option>Billing Question</option></select>
+              </div>
+            </div>    
+            <div class="control-group">
+              <label></label>
+              <div class="controls">
+                <button type="submit" class="btn btn-primary">
+                  Post
+                </button>
+              </div>
+            </div>   
+            
+          </form>
+          
+          
+        </div><!--/panel content-->
+      </div><!--/panel-->
+
+
+
+
+
+
+	      </div><!--/col-span-6-->
+     
+       </div><!--/row-->
+  	</div><!--/col-span-9-->
+    
+  </div><!--/row-->
+  <!-- /upper section -->
+  
+  <!-- lower section -->
+  <!--/container-->
+<!-- /Main -->
+
+
+<footer class="text-center">Visit Accessnow web site <a href=""><strong>accessnow.org</strong></a></footer>
+
+
+<div class="modal" id="addWidgetModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Add Widget</h4>
+      </div>
+      <div class="modal-body">
+        <p>Add a widget stuff here..</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dalog -->
+</div><!-- /.modal -->
+
+
+
+  
+	<!-- script references -->
+                
+    <script src="{{ url_for('static', filename='js/socket.io.min.js') }}"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+		<script src="static/js/bootstrap.min.js"></script>
+                <script src="{{ url_for('static', filename='js/mychat.js') }}"></script>
+	
+</div></body></html>
